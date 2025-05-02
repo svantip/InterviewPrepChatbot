@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InterviewBot</title>
+    <title>TechPrep AI - Technical Interview Practice Bot</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
     />
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-    <style>
-      df-messenger {
-        z-index: 999;
-        position: fixed;
-        --df-messenger-font-color: #000;
-        --df-messenger-font-family: Google Sans;
-        --df-messenger-chat-background: #f3f6fc;
-        --df-messenger-message-user-background: #d3e3fd;
-        --df-messenger-message-bot-background: #fff;
-        bottom: 16px;
-        right: 16px;
-      }
-    </style>
   </head>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
   <body>
     <df-messenger
       location="europe-west3"
@@ -31,8 +32,223 @@
       language-code="en"
       max-query-length="-1"
     >
-      <df-messenger-chat-bubble chat-title="InterviewBotNovaVerzija">
+      <df-messenger-chat-bubble chat-title="Interview preparation assistant">
       </df-messenger-chat-bubble>
     </df-messenger>
+  </body>
+
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="header-top">
+          <a href="#" class="logo">TechPrep AI</a>
+          <button class="mobile-menu-button">☰</button>
+        </div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#chatbot">Try It</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#" class="cta-button">Sign Up Free</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1>Master Technical Interviews with AI-Powered Practice</h1>
+        <p>
+          Prepare for your next tech interview with our intelligent chatbot that
+          simulates real interview scenarios, provides instant feedback, and
+          helps you improve your technical skills.
+        </p>
+        <a href="#chatbot" class="cta-button">Try the Chatbot Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="features-container">
+        <div class="section-title">
+          <h2>Why Choose TechPrep AI?</h2>
+          <p>
+            Our AI-powered interview preparation tool is designed to help you
+            succeed in technical interviews.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Realistic Interview Scenarios</h3>
+            <p>
+              Practice with questions commonly asked at top tech companies like
+              Google, Amazon, and Microsoft.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Instant Feedback</h3>
+            <p>
+              Get immediate feedback on your answers to improve your
+              problem-solving approach.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Track Your Progress</h3>
+            <p>
+              Monitor your improvement over time with detailed performance
+              analytics.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Personalized Learning</h3>
+            <p>
+              Focus on topics and questions tailored to your skill level and
+              target companies.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Practice Anywhere</h3>
+            <p>
+              Access the chatbot from any device, anytime you want to practice.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Diverse Topics</h3>
+            <p>
+              Cover algorithms, data structures, system design, and
+              language-specific questions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2>Success Stories</h2>
+          <p>
+            Hear from developers who landed their dream jobs after practicing
+            with TechPrep AI.
+          </p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-content">
+              "After practicing with TechPrep AI for just 3 weeks, I felt so
+              much more confident during my Google interview. I was able to
+              solve problems I would have struggled with before."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JD</div>
+              <div class="author-info">
+                <h4>John Doe</h4>
+                <p>Software Engineer at Google</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-content">
+              "The instant feedback from the AI helped me identify and fix gaps
+              in my knowledge. The system design questions were particularly
+              helpful for my Amazon interview."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JS</div>
+              <div class="author-info">
+                <h4>Jane Smith</h4>
+                <p>Senior Developer at Amazon</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-content">
+              "As a self-taught developer, I was nervous about technical
+              interviews. This tool gave me the practice I needed to land a job
+              at a top startup. Worth every minute spent!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MJ</div>
+              <div class="author-info">
+                <h4>Mike Johnson</h4>
+                <p>Full-Stack Developer at Stripe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2>Ready to Ace Your Next Technical Interview?</h2>
+        <p>
+          Start practicing today and join thousands of developers who have
+          improved their interview skills with TechPrep AI.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="primary-button">Sign Up Free</a>
+          <a href="#chatbot" class="secondary-button">Try Demo First</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <a href="#" class="footer-logo">TechPrep AI</a>
+          <p class="footer-description">
+            Helping developers prepare for technical interviews with AI-powered
+            practice.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">t</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">g</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TechPrep AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
